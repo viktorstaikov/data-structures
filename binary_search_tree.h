@@ -19,6 +19,10 @@ private:
 
     void copyData(const BinarySearchTree& other);
     void deleteTree(Node* tree);
+    Node* min(Node* tree, int& min);
+    Node* max(Node* tree, int& max);
+    void deleteNode(Node* tree);
+    void printTree(Node* tree);
 
 public:
     BinarySearchTree();
@@ -33,8 +37,6 @@ public:
     int Min();
     int Max();
     void Print();
-    //Node& Successor(int val);
-    //Node& Predecessor(int val);
 };
 
 #endif // BINARY_SEACRH_TREE_H
